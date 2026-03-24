@@ -1,4 +1,4 @@
-lanky media. — Creative Portfolio
+lanky medium. — Creative Portfolio
 
 Personal portfolio website — automotive photographer, video editor, and web developer based in Brighton & Hove.
 

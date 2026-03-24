@@ -1,6 +1,6 @@
-# Kyle /_ — Creative Portfolio
+Lanky Media — Creative Portfolio
 
-Personal portfolio website for Kyle — automotive photographer, video editor, and web developer based in Brighton & Hove.
+Personal portfolio website — automotive photographer, video editor, and web developer based in Brighton & Hove.
 
 ## Stack
 
@@ -50,13 +50,4 @@ Personal portfolio website for Kyle — automotive photographer, video editor, a
 - [ ] Update contact email in index.html
 - [ ] Update social media links in footer
 
-## Deployment
 
-Push to `main` branch. GitHub Pages or Vercel will deploy automatically.
-
-Live at: `https://yourusername.github.io`
-
----
-
-BA Media & Communications — University of Sussex  
-Brighton & Hove, England

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ CANVAS BACKGROUND ░░ -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="neon-text">KYLE</span><span class="nav-slash"> /_</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#work" onclick="closeMobile()">Work</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#certifications" onclick="closeMobile()">Certs</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <div class="hero-content reveal">
+      <p class="hero-label">// Creative Portfolio — Brighton & Hove</p>
+      <h1 class="hero-title">
+        <span class="neon-text neon-flicker">VISUAL</span><br/>
+        <span class="hero-title-mid">STORY</span><br/>
+        <span class="neon-text">TELLER</span>
+      </h1>
+      <p class="hero-sub">Automotive photography &amp; film. Motion design. Web experiences.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View Work</a>
+        <a href="#about" class="btn-ghost">About Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ WORK ░░ -->
+  <section id="work">
+    <div class="section-header reveal">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title neon-text-sm">Selected Work</h2>
+      <p class="section-sub">Four disciplines. One vision.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- Card 1: Landscape Video -->
+      <article class="work-card reveal" data-delay="0">
+        <div class="card-media landscape-video">
+          <div class="media-placeholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="8" width="44" height="32" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M30 24L20 18v12l10-6z" fill="currentColor"/>
+              </svg>
+            </div>
+            <p class="placeholder-label">Landscape Video</p>
+            <p class="placeholder-hint">16:9 — Upload MP4</p>
+          </div>
+          <div class="card-overlay">
+            <span class="card-type-badge">&#9654; Film</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-tag">Video Production</span>
+            <span class="card-format">16 : 9</span>
+          </div>
+          <h3 class="card-title">Cinematic Edit</h3>
+          <p class="card-desc">Coming soon — Premiere Pro &amp; After Effects production.</p>
+          <a href="docs/landscape-video.html" class="card-link">
+            View Process &amp; Documentation <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2: Portrait TikTok Video -->
+      <article class="work-card work-card--portrait reveal" data-delay="100">
+        <div class="card-media portrait-video">
+          <div class="media-placeholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="2" width="28" height="44" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M26 24L20 20v8l6-4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <p class="placeholder-label">Short-Form Video</p>
+            <p class="placeholder-hint">9:16 — Upload MP4</p>
+          </div>
+          <div class="card-overlay">
+            <span class="card-type-badge">&#9654; Reel</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-tag">Short-Form</span>
+            <span class="card-format">9 : 16</span>
+          </div>
+          <h3 class="card-title">TikTok / Reels</h3>
+          <p class="card-desc">Coming soon — vertical short-form content edit.</p>
+          <a href="docs/portrait-video.html" class="card-link">
+            View Process &amp; Documentation <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3: Landscape Photo Carousel -->
+      <article class="work-card reveal" data-delay="200">
+        <div class="card-media landscape-photo">
+          <div class="carousel-placeholder">
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="media-placeholder">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="8" width="44" height="32" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="16" cy="20" r="4" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M2 32l12-10 8 8 8-6 16 12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <p class="placeholder-label">Landscape Photos</p>
+              <p class="placeholder-hint">16:9 — Upload JPG / PNG</p>
+            </div>
+            <div class="carousel-arrows">
+              <button class="carousel-btn" aria-label="Previous">&#8592;</button>
+              <button class="carousel-btn" aria-label="Next">&#8594;</button>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <span class="card-type-badge">&#9632; Gallery</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-tag">Photography</span>
+            <span class="card-format">Carousel</span>
+          </div>
+          <h3 class="card-title">Landscape Series</h3>
+          <p class="card-desc">Coming soon — automotive &amp; editorial photography.</p>
+          <a href="docs/landscape-photos.html" class="card-link">
+            View Process &amp; Documentation <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Portrait Photo Carousel -->
+      <article class="work-card work-card--portrait reveal" data-delay="300">
+        <div class="card-media portrait-photo">
+          <div class="carousel-placeholder">
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="media-placeholder">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="2" width="28" height="44" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="24" cy="18" r="5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M10 34l8-8 6 6 6-4 8 8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <p class="placeholder-label">Portrait Photos</p>
+              <p class="placeholder-hint">9:16 — Upload JPG / PNG</p>
+            </div>
+            <div class="carousel-arrows">
+              <button class="carousel-btn" aria-label="Previous">&#8592;</button>
+              <button class="carousel-btn" aria-label="Next">&#8594;</button>
+            </div>
+          </div>
+          <div class="card-overlay">
+            <span class="card-type-badge">&#9632; Gallery</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta">
+            <span class="card-tag">Photography</span>
+            <span class="card-format">Portrait</span>
+          </div>
+          <h3 class="card-title">Portrait Series</h3>
+          <p class="card-desc">Coming soon — detail &amp; editorial portrait work.</p>
+          <a href="docs/portrait-photos.html" class="card-link">
+            View Process &amp; Documentation <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="section-header reveal">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title neon-text-sm">About Me</h2>
+      </div>
+      <div class="about-placeholder reveal">
+        <div class="about-placeholder-inner">
+          <div class="placeholder-icon large">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 56c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="placeholder-label">About Me — Coming Soon</p>
+          <p class="placeholder-hint">
+            BA Media &amp; Communications — University of Sussex<br/>
+            Brighton &amp; Hove — Available for work
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CERTIFICATIONS ░░ -->
+  <section id="certifications">
+    <div class="section-header reveal">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title neon-text-sm">Certifications</h2>
+      <p class="section-sub">Verified credentials — expanding regularly.</p>
+    </div>
+
+    <div class="certs-grid">
+
+      <div class="cert-card reveal" data-delay="0">
+        <div class="cert-logo-area">
+          <div class="cert-logo-placeholder">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cert-info">
+          <p class="cert-issuer">Issuing Organisation</p>
+          <h3 class="cert-name">Certification Title</h3>
+          <p class="cert-status">Upload certificate — coming soon</p>
+        </div>
+        <div class="cert-badge">
+          <span>Pending</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-delay="100">
+        <div class="cert-logo-area">
+          <div class="cert-logo-placeholder">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cert-info">
+          <p class="cert-issuer">Issuing Organisation</p>
+          <h3 class="cert-name">Certification Title</h3>
+          <p class="cert-status">Upload certificate — coming soon</p>
+        </div>
+        <div class="cert-badge">
+          <span>Pending</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-delay="200">
+        <div class="cert-logo-area">
+          <div class="cert-logo-placeholder">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cert-info">
+          <p class="cert-issuer">Issuing Organisation</p>
+          <h3 class="cert-name">Certification Title</h3>
+          <p class="cert-status">Upload certificate — coming soon</p>
+        </div>
+        <div class="cert-badge">
+          <span>Pending</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <span class="section-tag">// 04</span>
+      <h2 class="contact-title">
+        <span class="neon-text neon-flicker-slow">Let's</span> Work<br/>Together
+      </h2>
+      <p class="contact-sub">Open to freelance, internships, and full-time roles in Brighton &amp; beyond.</p>
+      <a href="mailto:your@email.com" class="btn-primary btn-large">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo neon-text">KYLE /_</div>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Kyle. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
